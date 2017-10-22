@@ -30,3 +30,6 @@ RUN set -ex \
 
 RUN pip install uwsgi
 RUN pip install weasyprint
+
+COPY ./requirements.txt /requirements.txt
+RUN pip install --no-cache-dir -r /requirements.txt
