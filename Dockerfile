@@ -2,6 +2,7 @@ FROM python:3.5-alpine
 
 RUN set -ex \
     && apk add --no-cache --update \
+    build-base \
     gcc \
     make \
     libc-dev \
@@ -10,9 +11,13 @@ RUN set -ex \
     pcre-dev \
     zlib-dev \
     libffi-dev \
+    libffi \
+    gdk-pixbuf \
     jpeg-dev \
     postgresql-dev \
     python3-dev \
+    cairo-dev \
+    pango-dev \
     libmagic \
     cairo \
     pango \
@@ -24,3 +29,4 @@ RUN set -ex \
   chown -R nginx:www-data /var/lib/nginx
 
 RUN pip install uwsgi
+RUN pip install weasyprint
