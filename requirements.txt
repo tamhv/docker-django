@@ -61,7 +61,7 @@ django-user-sessions==1.5.3
 django-validated-file==2.0.1
 django-vanilla-views==1.0.4
 django-webtest==1.9.2
-djangorestframework==3.6.4
+djangorestframework==3.11.2
 docutils==0.14
 first==2.0.1
 flake8==3.4.1
